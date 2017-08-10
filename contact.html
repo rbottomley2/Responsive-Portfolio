@@ -11,9 +11,9 @@
 
 <body>
 	<!-- /*Header Section with Nav Buttons to My Portfolio*/ -->	
-	<div class =MyContactInfoC>
-		<h1 class=MyNameC>Robert Bottomley</h1>
-		<div class="navigationC">	
+	<div class =MyContactInfo>
+		<h1 class=MyName>Robert Bottomley</h1>
+		<div class="navigation">	
 			<nav class=MoreAboutMe>
 	  			<a class="index" href="./index.html">About</a> 
 	 			<a class="portfolio" href="./portfolio.html">Portfolio</a> 
@@ -21,34 +21,34 @@
 	  		</nav>
 		</div>
 	</div>	
-	<section class="MainAndSide">
-		<!-- /*Section for Main Body Containing Contact Form*/	 -->
-		<div class="ContactMe">
-		  	<h1 class="ContactHeader">Contact</h1>
+	
+	<!-- /*Section for Main Body Containing Contact Form*/	 -->
+	<div class="ContactMe">
+	  	<h1 class="ContactHeader">Contact</h1>
 
-		  	<form action="/action_page.php">
-		    <label for="fname">Name</label>
-		    <input type="text" id="fname" name="fullname" placeholder="John Smith">
-		    <form action="/action_page.php">
-		    <label for="email">Email</label>
-		    <input type="text" id="email" name="youremail" placeholder="example@gmail.com">
-			<label>Message</label>
-			<textarea cols="50" rows="4" name="comment"></textarea>
-	    	<input type="submit" value="Submit">
-	  		</form>
+	  	<form action="/action_page.php">
+	    <label for="fname">Name</label>
+	    <input type="text" id="fname" name="fullname" placeholder="John Smith">
+	    <form action="/action_page.php">
+	    <label for="email">Email</label>
+	    <input type="text" id="email" name="youremail" placeholder="example@gmail.com">
+		<label>Message</label>
+		<textarea cols="50" rows="4" name="comment"></textarea>
+    	<input type="submit" value="Submit">
+  		</form>
+	</div>
+
+	<!-- /*Section For Connect With Me Box*/ -->
+	<section class="MyLinks">
+		<header class="ConnectHeader">
+			Connect With Me
+		</header>
+
+		<div class="links">
+  		<a href="https://github.com/rbottomley2"><img class= "iconstyle2" src="assets/images/github.png"></a>
+  		<a href="https://www.linkedin.com/in/robert-bottomley-91a7b99/"><img class= "iconstyle1" src="assets/images/linked-in.png"></a> 
+  		<a href="https://stackoverflow.com/users/8313647/robert-bottomley"><img class= "iconstyle2" src="assets/images/stackoverflow.png"></a>
 		</div>
-		<!-- /*Section For Connect With Me Box*/ -->
-		<section class="MyLinks">
-			<header class="ConnectHeader">
-				Connect With Me
-			</header>
-
-			<div class="links">
-	  		<a href="https://github.com/rbottomley2"><img class= "iconstyle2" src="assets/images/github.png"></a>
-	  		<a href="https://www.linkedin.com/in/robert-bottomley-91a7b99/"><img class= "iconstyle1" src="assets/images/linked-in.png"></a> 
-	  		<a href="https://stackoverflow.com/users/8313647/robert-bottomley"><img class= "iconstyle2" src="assets/images/stackoverflow.png"></a>
-			</div>
-		</section>
 	</section>
 
 	
@@ -57,7 +57,7 @@
 </body>
 	<!-- /*Footer Section*/ -->
 	<footer class="site-footer">
-		® Copyright 2017 Robert Bottomley 
+		<p class="footertext">® Copyright 2017 Robert Bottomley</p>
 	</footer>
 </div>
 </html>

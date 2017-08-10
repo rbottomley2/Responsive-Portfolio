@@ -7,25 +7,7 @@ body {
 	display: inline-block;
 	width: 960px;
 }
-<!-- /*Style for Sticky Footer*/ -->
-html, body {
-  height: 100%;
-  
-}
-.page-wrap {
-  min-height: 100%;
-  margin-bottom: -142px; 
-}
-.page-wrap:after {
-  content: "";
-  display: block;
-}
-.site-footer, .page-wrap:after {
-  height: 100px; 
-}
-<!-- /*End of Style for Sticky Footer*/ -->
 
-<!-- /*Style for Text in Bio*/ -->
 p {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777;
@@ -53,47 +35,12 @@ h3 {
 	display: inline-block;
 	background-color: #ffffff;
 	border-bottom: thick solid #dddddd;
-	margin-bottom: 25px;	
+	margin-bottom: 25px;
+	
+	
 }
-<!-- /*Styling for Header Compartment for the  Portfolio Page*/ -->
-.MyContactInfoP {
-	width: 960px;
-	display: inline-block;
-	background-color: #ffffff;
-	border-bottom: thick solid #dddddd;
-	margin-bottom: 25px;	
-}
-<!-- /*Styling for Header Compartment for the Contact Portfolio*/ -->
-.MyContactInfoC {
-	width: 960px;
-	display: inline-block;
-	background-color: #ffffff;
-	border-bottom: thick solid #dddddd;
-	margin-bottom: 25px;	
-}
-<!-- /*Main Header Name for Index Portfolio*/ -->
+<!-- /*Main Header Name*/ -->
 .MyName {
-	background: #4aaaa5;
-	width: 250px;
-	padding-bottom: 20px;
-	padding-top: 20px;
-	margin-left: 20px;
-	text-align: center;
-	float: left;
-}
-<!-- /*Main Header Name for Contact Portfolio*/ -->
-.MyNameC {
-	background: #4aaaa5;
-	width: 250px;
-	padding-bottom: 20px;
-	padding-top: 20px;
-	margin-left: 20px;
-	text-align: center;
-	float: left;
-}
-<!-- /*Main Header Name for  Portfolio Page*/ -->
-
-.MyNameP {
 	background: #4aaaa5;
 	width: 250px;
 	padding-bottom: 20px;
@@ -110,12 +57,6 @@ h3 {
 
 }
 .navigation {
-	float: right
-}
-.navigationP {
-	float: right
-}
-.navigationC {
 	float: right
 }
 nav:hover {
@@ -151,7 +92,6 @@ link to class portfoliopicures for main section, row 1/2/3 classes for picture r
 , and div classes for pic's A,B,C,D,and E*/
 .portfoliopictures {
 	display: inline-block;
-	float: left;
 	background-color: white;
 	border: thin solid #dddddd;
 	margin-left: 20px;
@@ -192,23 +132,13 @@ link to class portfoliopicures for main section, row 1/2/3 classes for picture r
 	width: 300px;
 	padding: 5px;
 }
-.MainAndSide {
-	display: inline-block;
-	overflow: auto;
-}
-.MainAndSideP {
-	display: inline-block;
-	overflow: auto;
-}
 .AboutMe {
 	display: inline-block;
 	background-color: #ffffff;
 	border: thin solid #dddddd;
 	margin-left: 20px;
-	margin-right: 50px;
 	width: 650px;
 	overflow: auto;
-	float: left;
 }
 .Aboutheader {
 	border-bottom: thick solid #dddddd;
@@ -237,11 +167,9 @@ link to class portfoliopicures for main section, row 1/2/3 classes for picture r
 }
 .ContactMe {
 	display: inline-block;
-	float: left;
 	background-color: white;
 	border: thin solid #dddddd;
 	margin-left: 20px;
-	margin-right: 20px;
 	width: 650px;
 	overflow: auto;
 }
@@ -317,135 +245,183 @@ input[type=submit]:hover {
 	float: left;
 }
 .MyLinks {
-	float: left;
-	
-	width: 200px;
+	float: right;
+	display: inline-block;
+	width: 270px;
 	padding-top: 30px;
 	border: thin solid #dddddd;
 	background-color: white;
 	text-align: center;
-	margin-left: 15px;
-	margin-right: 15px;
-	
 }
 .links {
 	float: right;
+	padding-right: 72px;
 	text-align: center;
-	padding-right: 30px;
 }
 
 
 .site-footer {
 	background-color: #666666;
 	color: white;
-	margin-top: 80px;
-	text-align: center;
+	margin-top: 30px;
 	width: 100%;
+	height: 100px;
+	text-align: center;
+	vertical-align: center;
 }
-footer {
-	background-color: #666666;
+.footertext {
+	margin-bottom: 20px;
+	margin-top: 45px;
 	color: white;
-	margin-top: 80px;
-	text-align: center;
-	width: 100%;
-	padding: 25px;
-
 }
 
-/*mediascreen CSS code for Index Page at 980px or less*/
-@media  screen and (max-width: 980px)  {
- 	
- 	
-	.navigation {
-		display: none;
+@media screen and (max-width: 980px) {
+	.AboutMe {
+		display: inline;
+		width: 315px;
+		float: left;
+		margin-right: 40px;
+
+
 	}
-	.MyName {
-		color: #4aaaa5;
+	.MyLinks {
+		float: left;
+	}
+	
+	.site-footer {
+		width: 980px;
+		display: inline-block;
+	}
+	.MyPicture {
+		margin-left: 7px;
+		margin-right: 8px;
+	}
+	
+}
+@media screen and (max-width: 768px) {
+	.AboutMe {
+	display: inline-block;
+	background-color: #ffffff;
+	border: thin solid #dddddd;
+	margin-left: 20px;
+	width: 700px;
+	overflow: auto;
+	}
+	.MyLinks {
+		margin-top: 25px;
+		margin-left: 20px;
+		width: 700px;
+	}
+	.site-footer {
+		width: 768px;
+		display: inline-block;
 	}
 	.MyContactInfo {
-		height: 25px;
-		overflow: hidden
+		width: 768px;
 	}
+	.links {
+		float: left;
+	}
+	.ConnectHeader {
+		padding-bottom: 10px;
+		text-align: left;
+	}
+	
+}
+	
+@media screen and (max-width: 640px) {
 	.AboutMe {
-		width: 340px;
-		
+		display: inline;
+		width: 540px;
 	}
-	.ConnectHeader {
-		font-size: 25px;
-	}
-	.iconstyle1 {
-		height: 30px;
-		width: 30px;
+	.MyPicture {
+		width: 530px;
+		margin-right: 5px;
+		margin-left: 5px;
 	}
 	
-	.iconstyle2 {
-		height: 70px;
-		width: 70px;
-	}
-	
-	
-}
-/*mediascreen CSS code for Index Page at 768px or less*/
-@media  screen and (max-width: 768px)  {
- 	
-	.ConnectHeader {
-		font-size: 25px;
-	}
-	.iconstyle1 {
-		height: 30px;
-		width: 30px;
-	}
-	
-	.iconstyle2 {
-		height: 70px;
-		width: 70px;
-	}
-	
-	
-}
-/*mediascreen CSS code for Contact Page at 980px or less*/
-@media  screen and (max-width: 980px) {
-	
-	.ContactMe {
-		width: 500px;
-	}
-		
-	.ConnectHeader {
-		font-size: 25px;
-	}
-	.iconstyle1 {
-		height: 30px;
-		width: 30px;
-	}
-	.iconstyle2 {
-		height: 70px;
-		width: 70px;
-	}
-	
-/*mediascreen CSS code for Portfolio Page at 980px or less*/
-@media  screen and (max-width: 980px)  {
-
-	.navigationP {
-		display: none;
-	}
-	.MyNameP {
-		color: #4aaaa5;
-	}
-	.MainAndSideP {
+	.MoreAboutMe {
+		margin-bottom: 0px;
+		width: 640px;
 		margin-top: 0px;
+		text-align: center;
 	}
-	.MyContactInfoP {
-		height: 0px;
-		overflow: hidden
-
+	.MyName {
+		width: 100%;
+		height: 20px;
+		margin-left: 0px;
+		margin-right: 0px;
+		color: #4aaaa5;
+		padding: 1px;
 	}
-	.portfoliopictures {
-		width: 325px;
+	.navigation {
+		width: 640px;
+		float: none;
+		
+	}
+	.index {
+		padding-right: 150px; 
+		
+		
+	}
+	.portfolio {
+		
+	}
+	.contact {
+		padding-left: 150px;
 
+		
+	}
+	.MyLinks {
+		margin-top: 25px;
+		margin-left: 20px;
+		width: 540px;
+	}
+	.links {
+		float: left;
+	}
+	.ConnectHeader {
+		padding-bottom: 10px;
+		text-align: left;
+	}
+	.site-footer {
+		width: 640px;
+	}
+	h1 {
+		font-size: 2px;
+	}
+	
+}
+@media screen and (max-width: 980px) {
+	.ContactMe {
+		float: left
+		width: 340px;
+	}
+	.MyLinks {
+		float: right;
+	}
+	form {
+		width: 75%;
+		margin-left: 55px;
+	}
+}
+@media screen and (max-width: 768px) {
+
+	.ContactMe {
+		width: 700px;
+	}
+	.MyLinks {
+		margin-top: 25px;
+		margin-left: 20px;
+		width: 700px;
+		float: left;
+	}
+	.links {
+		float: left;
+	}
+	.ConnectHeader {
+		padding-bottom: 10px;
+		text-align: left;
 	}
 
 }
-
-
-
-	
