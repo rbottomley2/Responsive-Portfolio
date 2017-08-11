@@ -3,7 +3,7 @@ head {
 }
 
 body {
-	background-color: #D3D3D3;
+	background-color: beige;
 	display: inline-block;
 	width: 960px;
 }
@@ -53,12 +53,11 @@ h3 {
 		float: right;
 		font-size: 25px;
 		width: 300px;
-		padding-top: 20px;
+		padding: 20px;
+		padding-left: 150px;
 
 }
-.navigation {
-	float: right
-}
+
 nav:hover {
   border-top: 4px solid #ffffff;
   border-bottom: 4px solid #ffffff;
@@ -193,18 +192,25 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
     margin-left: 25px;
-    margin-right: 10px;
-
-    
+    margin-right: 10px;   
 }
 label {
-	margin-left: 25px;
+	margin-left: 15px;
+}
+#fname {
+	margin-left: 15px;
+}
+#email {
+	margin-left: 15px;
+}
+.submit {
+	width:60px;
 }
 textarea {
 	padding: 12px 20px;
     margin: 8px 0;
-	width: 86%;
-	margin-left: 25px;
+	width: 75%;
+	margin-left: 15px;
 	color: #777777;
 	border: thin solid #dddddd;
 }
@@ -253,6 +259,15 @@ input[type=submit]:hover {
 	background-color: white;
 	text-align: center;
 }
+.MyLinksC {
+	float: right;
+	display: inline-block;
+	width: 270px;
+	padding-top: 30px;
+	border: thin solid #dddddd;
+	background-color: white;
+	text-align: center;
+}
 .links {
 	float: right;
 	padding-right: 72px;
@@ -276,21 +291,46 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 980px) {
+	.MoreAboutMe {
+		float: left;
+		margin-left: 175px;
+	}
 	.AboutMe {
 		display: inline;
 		width: 315px;
 		float: left;
 		margin-right: 40px;
-
-
+	}
+	.portfoliopictures {
+		width: 325px;
+		float: left;
+		margin-right: 40px;
+	}
+	.ContactMe {
+		width: 475px;
+		float: left;
+		margin-right: 40px;
 	}
 	.MyLinks {
 		float: left;
+		margin-left: 175px;
+	}
+	.MyLinksC {
+		width: 240px;
+		float: left;
+		margin-left: 45px; 
 	}
 	
 	.site-footer {
+		background-color: #666666;
+		color: white;
+		margin-top: 30px;
 		width: 980px;
-		display: inline-block;
+		height: 100px;
+		text-align: center;
+		vertical-align: center;
+		padding-top: 10px;
+		padding-bottom: 20px;
 	}
 	.MyPicture {
 		margin-left: 7px;
@@ -299,129 +339,76 @@ input[type=submit]:hover {
 	
 }
 @media screen and (max-width: 768px) {
-	.AboutMe {
-	display: inline-block;
-	background-color: #ffffff;
-	border: thin solid #dddddd;
-	margin-left: 20px;
-	width: 700px;
-	overflow: auto;
-	}
-	.MyLinks {
-		margin-top: 25px;
-		margin-left: 20px;
-		width: 700px;
-	}
-	.site-footer {
-		width: 768px;
-		display: inline-block;
-	}
-	.MyContactInfo {
-		width: 768px;
-	}
-	.links {
-		float: left;
-	}
-	.ConnectHeader {
-		padding-bottom: 10px;
-		text-align: left;
-	}
-	
-}
-	
-@media screen and (max-width: 640px) {
-	.AboutMe {
-		display: inline;
-		width: 540px;
-	}
-	.MyPicture {
-		width: 530px;
-		margin-right: 5px;
-		margin-left: 5px;
-	}
-	
 	.MoreAboutMe {
-		margin-bottom: 0px;
-		width: 640px;
-		margin-top: 0px;
-		text-align: center;
+		margin-left: 50px;
 	}
-	.MyName {
-		width: 100%;
-		height: 20px;
-		margin-left: 0px;
-		margin-right: 0px;
-		color: #4aaaa5;
-		padding: 1px;
-	}
-	.navigation {
-		width: 640px;
-		float: none;
-		
-	}
-	.index {
-		padding-right: 150px; 
-		
-		
-	}
-	.portfolio {
-		
-	}
-	.contact {
-		padding-left: 150px;
-
-		
-	}
-	.MyLinks {
-		margin-top: 25px;
-		margin-left: 20px;
-		width: 540px;
-	}
-	.links {
+	.AboutMe {
+		display: wrap;
+		flex-wrap: wrap;
+		width: 650px;
 		float: left;
+		margin-right: 25px;
+		margin-left: 25px;
 	}
-	.ConnectHeader {
-		padding-bottom: 10px;
-		text-align: left;
+	.portfoliopictures {
+		display: wrap;
+		flex-wrap: wrap;
+		width: 650px;
+		float: none;
+		margin-right: 25px;
+		margin-left: 25px;
 	}
-	.site-footer {
-		width: 640px;
-	}
-	h1 {
-		font-size: 2px;
+	.ContactMe {
+		width: 650px;
 	}
 	
-}
-@media screen and (max-width: 980px) {
-	.ContactMe {
-		float: left
-		width: 340px;
-	}
 	.MyLinks {
-		float: right;
-	}
-	form {
-		width: 75%;
-		margin-left: 55px;
-	}
-}
-@media screen and (max-width: 768px) {
-
-	.ContactMe {
-		width: 700px;
-	}
-	.MyLinks {
+		float: none;
+		display: inline-block;
+		width: 650px;
+		padding-top: 30px;
+		border: thin solid #dddddd;
+		background-color: white;
+		text-align: center;
 		margin-top: 25px;
-		margin-left: 20px;
-		width: 700px;
-		float: left;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+	.MyLinksC {
+		float: none;
+		display: inline-block;
+		width: 650px;
+		padding-top: 30px;
+		border: thin solid #dddddd;
+		background-color: white;
+		text-align: center;
+		margin-top: 25px;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+	.ConnectHeader{
+		text-align: left;
 	}
 	.links {
 		float: left;
 	}
-	.ConnectHeader {
-		padding-bottom: 10px;
-		text-align: left;
+	.site-footer {
+		background-color: #666666;
+		color: white;
+		margin-top: 30px;
+		width: 768px;
+		height: 100px;
+		text-align: center;
+		vertical-align: center;
+		padding-top: 10px;
+		padding-bottom: 20px;
 	}
 
+	
 }
+@media screen and (max-width: 640px)
+	
+
+
+
+
